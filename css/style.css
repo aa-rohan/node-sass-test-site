@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  padding: 20px; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase; }
+  .heading-primary-main {
+    display: block;
+    font-size: 5vw;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; }
+  .heading-primary-sub {
+    display: block;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 17px;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 20px;
+    /*  animation-delay:
+        animation-iteration-count
+    */ }
+
+body {
+  font-family: "Padauk", sans-serif;
+  font-weight: 400;
+  font-size: 16;
+  line-height: 1.7;
+  color: #777; }
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  transition: 0.1s; }
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn-white {
+  background-color: #fff;
+  color: #777; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(46, 39, 244, 0.8), rgba(134, 222, 240, 0.8)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  position: relative; }
+  .header-logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+  .header-logo {
+    height: 35px; }
+  .header-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%); }
+
+.button {
+  text-align: center;
+  transform: translateX(-10%); }

@@ -1,0 +1,40 @@
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+
+    &-main{
+        display: block;
+        font-size: 5vw;
+        font-weight: 400;
+        letter-spacing: 35px;
+
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+    &-sub{
+        display: block;
+        font-size: 1vw;
+        font-weight: 400;
+        letter-spacing: 17px;
+
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+
+        margin-bottom: 20px;
+
+    /*  animation-delay:
+        animation-iteration-count
+    */
+    }
+}
+
+body{
+    font-family: "Padauk", sans-serif;
+    font-weight: 400;
+    font-size: 16;
+    line-height: 1.7;
+    color: $color-grey-dark;
+
+}
